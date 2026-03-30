@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Daily Challenges</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0 1rem; }
+        header { background: #f0f4f8; padding: 1rem 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .logo { font-size: 1.25rem; font-weight: bold; }
+        .nav-links { display: flex; gap: 1rem; }
+        .nav-links a { text-decoration: none; color: #0366d6; }
+        .nav-links a.active, .nav-links a:hover { text-decoration: underline; }
+        main { max-width: 1000px; margin: 1.5rem auto; }
+        section { margin-bottom: 2rem; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 1rem; }
+        figure { margin: 0; border: 1px solid #ddd; padding: 0.5rem; }
+        figure img { display: block; width: 100%; height: auto; }
+        figure figcaption { margin-top: 0.5rem; font-size: 0.95rem; color: #333; }
+        .related-posts li { margin-bottom: 0.75rem; }
+        address { font-style: normal; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">JoySite</span>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>HTML Daily Challenges</h1>
+            <p>This page collects five exercise tasks in one place so you can practice semantic HTML and page structure.</p>
+        </section>
+        <section>
+            <h2>Day 1: Five Tags Challenge</h2>
+            <p>This example uses several tags I have not used before:</p>
+            <ul>
+                <li><abbr title="HyperText Markup Language">HTML</abbr></li>
+                <li><code>&lt;blockquote&gt;</code></li>
+                <li><code>&lt;cite&gt;</code></li>
+                <li><code>&lt;mark&gt;</code></li>
+                <li><code>&lt;time&gt;</code></li>
+                <li><code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code></li>
+            </ul>
+            <blockquote cite="https://developer.mozilla.org/">
+                <p>“Good HTML structure is the foundation of accessible and maintainable web pages.”</p>
+                <footer>— <cite>MDN Web Docs</cite></footer>
+            </blockquote>
+            <p>Use <mark>semantic tags</mark> to make content easier to understand for both users and machines.</p>
+            <p>Published on <time datetime="2026-03-30">March 30, 2026</time>.</p>
+            <details>
+                <summary>Why these tags matter</summary>
+                <p>These tags help communicate the purpose of content and support richer browser behavior, such as understanding definitions, quotations, metadata, and collapsible sections.</p>
+            </details>
+        </section>
+        <section>
+            <h2>Day 2: Navigation Menu</h2>
+            <p>The header above uses a semantic <code>&lt;nav&gt;</code> element and places the site name on the left with four links on the right.</p>
+        </section>
+        <section>
+            <h2>Day 3: Contact Section</h2>
+            <address>
+                JoySite<br>
+                123 Learning Lane<br>
+                Nairobi, Kenya<br>
+                <a href="mailto:joy@example.com">joy@example.com</a><br>
+                <a href="tel:+254700000000">+254 700 000 000</a>
+            </address>
+            <p>Social media:</p>
+            <ul>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Day 4: Photo Gallery Structure</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+1" alt="Gallery image 1">
+                    <figcaption>Gallery image one</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+2" alt="Gallery image 2">
+                    <figcaption>Gallery image two</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+3" alt="Gallery image 3">
+                    <figcaption>Gallery image three</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+4" alt="Gallery image 4">
+                    <figcaption>Gallery image four</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+5" alt="Gallery image 5">
+                    <figcaption>Gallery image five</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+6" alt="Gallery image 6">
+                    <figcaption>Gallery image six</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>Day 5: Blog Post Layout</h2>
+            <article>
+                <h3>Building Better HTML Pages</h3>
+                <p><strong>By</strong> Joy • <time datetime="2026-03-30">March 30, 2026</time></p>
+                <img src="https://via.placeholder.com/800x300?text=Featured+Image" alt="Featured blog post image" style="width:100%; height:auto; margin:1rem 0;">
+                <h4>Introduction</h4>
+                <p>Writing semantic HTML helps create pages that are easier to navigate, maintain, and access. It also improves search engine understanding and user experience.</p>
+                <h4>Using meaningful structure</h4>
+                <p>Organizing content with headings, sections, and proper tags makes the page more readable. For example, an article should contain clear headings and related content grouped together.</p>
+                <h4>Making content scannable</h4>
+                <p>Subheadings and short paragraphs keep readers engaged. When you present information in manageable chunks, it is faster to scan and understand.</p>
+            </article>
+            <section>
+                <h4>Related Posts</h4>
+                <ul class="related-posts">
+                    <li><a href="#">Semantic HTML Tips</a></li>
+                    <li><a href="#">How to Build Accessible Forms</a></li>
+                    <li><a href="#">Structuring Pages for Readability</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Joy</title>
+    <style>
+        nav a { margin-right: 1rem; text-decoration: none; color: #0066cc; }
+        nav a.active, nav a[aria-current="page"] { font-weight: bold; text-decoration: underline; }
+        .contact-details li { margin-bottom: 0.5rem; }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
+    </header>
     <main>
-        <h1>Contact Us</h1>
+        <h1>Contact Joy</h1>
         <form action="#" method="post">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -51,6 +64,22 @@
                 <button type="submit">Submit</button>
             </p>
         </form>
+        <section>
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Location</h2>
+            <ul class="contact-details">
+                <li>Location: Nairobi, Kenya</li>
+                <li>Timezone: East Africa Time (EAT)</li>
+                <li>Working hours: 9:00 AM - 5:00 PM EAT</li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>

@@ -3,19 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joy - About Me</title>
+    <title>Joy - Home</title>
+    <style>
+        nav a { margin-right: 1rem; text-decoration: none; color: #0066cc; }
+        nav a.active, nav a[aria-current="page"] { font-weight: bold; text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <h1>Joy</h1>
-    <p>Hello! I am Joy, a creative learner who loves exploring new ideas, making things with code, and sharing positive energy with others.</p>
-    <img src="joy.jpg" alt="Image of Joy">
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Drawing and digital art</li>
-        <li>Reading science fiction</li>
-        <li>Learning web development</li>
-    </ul>
-    <p>Check out my favorite website: <a href="https://www.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a></p>
-    <p>Contact me at <a href="mailto:joynyambura599@gmail.com">My Email</a></p>
+    <header>
+        <nav>
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Joy</h1>
+            <p>Creative learner and aspiring web developer. I enjoy building simple, accessible websites and exploring new ideas online.</p>
+        </section>
+        <section>
+            <h2>Welcome</h2>
+            <p>This site shows who I am, what I can do, and how to get in touch. Use the links below to learn more.</p>
+        </section>
+        <section>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
